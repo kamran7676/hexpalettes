@@ -1,5 +1,6 @@
 ---
 import '../index.css';
+import Analytics from '@vercel/analytics/astro'
 
 interface Props {
   title: string;
@@ -50,6 +51,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <div class="min-h-screen bg-surface-light dark:bg-surface-dark transition-colors duration-300">
       <slot />
     </div>
+    <Analytics/>
   </body>
 </html>
 
