@@ -1,8 +1,10 @@
-# ColorPalette — [colorpalette.temaprint.com](https://colorpalette.temaprint.com)
+# HexPalettes
 
 A color palette explorer built with Astro and React. Browse 200+ colors, curated palettes, and articles about color theory, trends, and design.
 
-![Color Palettes Preview](public/colorpalette.png)
+Suggested GitHub description: Explore beautiful colors, curated palettes, and practical color inspiration for your next design project.
+
+![HexPalettes Preview](public/hexpalettes.svg)
 
 ## Features
 
@@ -59,8 +61,8 @@ src/
 ## Getting Started
 
 ```bash
-git clone https://github.com/temaprint/colorpalette
-cd colorpalette
+git clone <your-repository-url>
+cd hexpalettes
 npm install
 npm run dev        # dev server at localhost:4321
 npm run build      # static build to dist/
