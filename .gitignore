@@ -11,6 +11,7 @@ node_modules/
 venv/
 dist/
 build/
+.vercel/
 
 # Файлы редакторов и IDE
 .idea/
