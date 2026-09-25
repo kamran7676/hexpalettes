@@ -3,7 +3,8 @@ import react from '@astrojs/react';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-  site: process.env.SITE_URL || 'http://localhost:4321',
+  site: 'https://hexpalettes.vercel.app',
+  trailingSlash: 'never',
   integrations: [react(), sitemap()],
 });
 
