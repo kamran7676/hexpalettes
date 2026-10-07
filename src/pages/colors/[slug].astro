@@ -43,11 +43,20 @@ function getContrastColor(hexColor: string) {
 }
 
 const textColor = getContrastColor(color.hexCode);
+const noindexSlugs = new Set([
+  'mucus-plug-color-chart',
+  'color-factory-nyc',
+  'color-factory-chicago',
+  'color-guard',
+  'color-maze',
+  'color-sheet',
+]);
 ---
 
 <ColorLayout
   title={`${color.name} Color (${color.hexCode}): Meaning & Combinations`}
   description={getMetaDescription(color.content, color.name)}
+  noindex={noindexSlugs.has(color.slug)}
 >
   <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
     <div class="lg:col-span-2">

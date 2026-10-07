@@ -5,9 +5,10 @@ import Analytics from '@vercel/analytics/astro'
 interface Props {
   title: string;
   description?: string;
+  noindex?: boolean;
 }
 
-const { title, description = 'Discover beautiful color palettes, explore colors, and find inspiration for your next design project.' } = Astro.props;
+const { title, description = 'Discover beautiful color palettes, explore colors, and find inspiration for your next design project.', noindex = false } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
@@ -17,6 +18,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
+    {noindex && <meta name="robots" content="noindex, follow" />}
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/hexpalettes.svg" />
     <link rel="canonical" href={canonicalURL} />

@@ -6,6 +6,7 @@ import { ArrowLeft } from 'lucide-react';
 interface Props {
   title: string;
   description?: string;
+  noindex?: boolean;
   backLink?: string;
   backText?: string;
 }
@@ -13,12 +14,13 @@ interface Props {
 const {
   title,
   description,
+  noindex,
   backLink = "/colors",
   backText = "Back to Colors"
 } = Astro.props;
 ---
 
-<Layout title={title} description={description}>
+<Layout title={title} description={description} noindex={noindex}>
   <Navbar />
   <main class="container py-8 lg:py-12">
     <div class="max-w-6xl mx-auto">
