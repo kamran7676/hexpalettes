@@ -2,10 +2,20 @@
 import ColorLayout from '../../layouts/ColorLayout.astro';
 import { Tag, Palette, Copy } from 'lucide-react';
 import { getAllColors } from '../../lib/colors';
+import { getMetaDescription } from '../../lib/meta-description';
 
 export async function getStaticPaths() {
   const colors = await getAllColors();
-  return colors.map(color => ({
+  const colorsBySlug = new Map<string, (typeof colors)[number]>();
+
+  for (const color of colors) {
+    const current = colorsBySlug.get(color.slug);
+    if (!current || color.content.length > current.content.length) {
+      colorsBySlug.set(color.slug, color);
+    }
+  }
+
+  return Array.from(colorsBySlug.values(), color => ({
     params: { slug: color.slug },
     props: { color },
   }));
@@ -35,7 +45,10 @@ function getContrastColor(hexColor: string) {
 const textColor = getContrastColor(color.hexCode);
 ---
 
-<ColorLayout title={`${color.name} — Color Details`}>
+<ColorLayout
+  title={`${color.name} Color (${color.hexCode}): Meaning & Combinations`}
+  description={getMetaDescription(color.content, color.name)}
+>
   <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
     <div class="lg:col-span-2">
       {/* Main Color Card */}

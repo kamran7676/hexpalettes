@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import Navbar from '../../components/Navbar.astro';
 import { ArrowLeft, Calendar, Droplet } from 'lucide-react';
 import { getAllArticles } from '../../lib/articles';
+import { getMetaDescription } from '../../lib/meta-description';
 
 export async function getStaticPaths() {
   const articles = await getAllArticles();
@@ -15,7 +16,10 @@ export async function getStaticPaths() {
 const { article } = Astro.props;
 ---
 
-<Layout title={`${article.title} — HexPalettes`}>
+<Layout
+  title={`${article.title} — HexPalettes`}
+  description={getMetaDescription(article.content, article.title)}
+>
   <Navbar />
   <main class="container py-12 lg:py-16">
     <div class="max-w-4xl mx-auto">

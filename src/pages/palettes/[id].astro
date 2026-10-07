@@ -3,6 +3,7 @@ import PaletteLayout from '../../layouts/PaletteLayout.astro';
 import { Droplet } from 'lucide-react';
 import { getAllColors } from '../../lib/colors';
 import { getAllPalettes } from '../../lib/palettes';
+import { getMetaDescription } from '../../lib/meta-description';
 
 export async function getStaticPaths() {
   const palettes = await getAllPalettes();
@@ -20,7 +21,10 @@ const paletteColors = palette.colors
   .filter(Boolean);
 ---
 
-<PaletteLayout title={`${palette.name} — Palette`}>
+<PaletteLayout
+  title={`${palette.name} — Palette`}
+  description={getMetaDescription(palette.description, palette.name)}
+>
   <div class="card mb-8">
     <div class="flex h-52">
       {paletteColors.map(color => color && (
