@@ -4,8 +4,9 @@ import Navbar from '../../components/Navbar.astro';
 import { Droplet } from 'lucide-react';
 import { getAllColors, getAllTags } from '../../lib/colors';
 import ColorFilters from '../../components/ColorFilters.tsx';
+import { noindexColorSlugs } from '../../lib/color-routes.mjs';
 
-const colors = await getAllColors();
+const colors = (await getAllColors()).filter(color => !noindexColorSlugs.has(color.slug));
 const tags = await getAllTags();
 ---
 
@@ -28,7 +29,7 @@ const tags = await getAllTags();
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5" id="colors-grid">
         {colors.map(color => (
           <a
-            href={`/colors/${color.slug}`}
+            href={`/color/${color.slug}`}
             class="group card"
             data-tags={JSON.stringify(color.tags)}
           >

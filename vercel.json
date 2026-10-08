@@ -1,3 +1,1180 @@
 {
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/colors/alabaster",
+      "destination": "/color/alabaster",
+      "permanent": true
+    },
+    {
+      "source": "/colors/almond-color",
+      "destination": "/color/almond-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/amaranth-color",
+      "destination": "/color/amaranth-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/amber",
+      "destination": "/color/amber",
+      "permanent": true
+    },
+    {
+      "source": "/colors/amber-color",
+      "destination": "/color/amber-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/amethyst",
+      "destination": "/color/amethyst",
+      "permanent": true
+    },
+    {
+      "source": "/colors/annatto-color",
+      "destination": "/color/annatto-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/anthracite-color",
+      "destination": "/color/anthracite-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/apricot-color",
+      "destination": "/color/apricot-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/aqua-color",
+      "destination": "/color/aqua-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/aquamarine",
+      "destination": "/color/aquamarine",
+      "permanent": true
+    },
+    {
+      "source": "/colors/ash-color",
+      "destination": "/color/ash-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/aubergine-color",
+      "destination": "/color/aubergine-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/auburn",
+      "destination": "/color/auburn",
+      "permanent": true
+    },
+    {
+      "source": "/colors/azure",
+      "destination": "/color/azure",
+      "permanent": true
+    },
+    {
+      "source": "/colors/baby-blue",
+      "destination": "/color/baby-blue",
+      "permanent": true
+    },
+    {
+      "source": "/colors/baby-pink",
+      "destination": "/color/baby-pink",
+      "permanent": true
+    },
+    {
+      "source": "/colors/beige",
+      "destination": "/color/beige",
+      "permanent": true
+    },
+    {
+      "source": "/colors/black-color",
+      "destination": "/color/black-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/blood-orange",
+      "destination": "/color/blood-orange",
+      "permanent": true
+    },
+    {
+      "source": "/colors/blood-red",
+      "destination": "/color/blood-red",
+      "permanent": true
+    },
+    {
+      "source": "/colors/blue",
+      "destination": "/color/blue",
+      "permanent": true
+    },
+    {
+      "source": "/colors/blue-green",
+      "destination": "/color/blue-green",
+      "permanent": true
+    },
+    {
+      "source": "/colors/blush-color",
+      "destination": "/color/blush-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/bone-color",
+      "destination": "/color/bone-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/bordeaux-color",
+      "destination": "/color/bordeaux-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/brass-color",
+      "destination": "/color/brass-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/bronze",
+      "destination": "/color/bronze",
+      "permanent": true
+    },
+    {
+      "source": "/colors/brown",
+      "destination": "/color/brown",
+      "permanent": true
+    },
+    {
+      "source": "/colors/buff-color",
+      "destination": "/color/buff-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/burgundy",
+      "destination": "/color/burgundy",
+      "permanent": true
+    },
+    {
+      "source": "/colors/burnt-orange",
+      "destination": "/color/burnt-orange",
+      "permanent": true
+    },
+    {
+      "source": "/colors/burnt-sienna",
+      "destination": "/color/burnt-sienna",
+      "permanent": true
+    },
+    {
+      "source": "/colors/camel-color",
+      "destination": "/color/camel-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/caramel-color",
+      "destination": "/color/caramel-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/carmine-color",
+      "destination": "/color/carmine-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/celadon-color",
+      "destination": "/color/celadon-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/cerise-color",
+      "destination": "/color/cerise-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/cerulean-color",
+      "destination": "/color/cerulean-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/champagne-color",
+      "destination": "/color/champagne-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/charcoal-color",
+      "destination": "/color/charcoal-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/chartreuse",
+      "destination": "/color/chartreuse",
+      "permanent": true
+    },
+    {
+      "source": "/colors/chestnut-color",
+      "destination": "/color/chestnut-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/clay-color",
+      "destination": "/color/clay-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/cobalt-color",
+      "destination": "/color/cobalt-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/coffee-color",
+      "destination": "/color/coffee-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/cognac-color",
+      "destination": "/color/cognac-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/color-analysis",
+      "destination": "/color/color-analysis",
+      "permanent": true
+    },
+    {
+      "source": "/colors/color-black",
+      "destination": "/color/color-black",
+      "permanent": true
+    },
+    {
+      "source": "/colors/color-blind-glasses",
+      "destination": "/color/color-blind-glasses",
+      "permanent": true
+    },
+    {
+      "source": "/colors/color-by-number",
+      "destination": "/color/color-by-number",
+      "permanent": true
+    },
+    {
+      "source": "/colors/color-changer",
+      "destination": "/color/color-changer",
+      "permanent": true
+    },
+    {
+      "source": "/colors/color-conditioner",
+      "destination": "/color/color-conditioner",
+      "permanent": true
+    },
+    {
+      "source": "/colors/color-gray",
+      "destination": "/color/color-gray",
+      "permanent": true
+    },
+    {
+      "source": "/colors/color-lila",
+      "destination": "/color/color-lila",
+      "permanent": true
+    },
+    {
+      "source": "/colors/color-wheel-hair",
+      "destination": "/color/color-wheel-hair",
+      "permanent": true
+    },
+    {
+      "source": "/colors/copper-color",
+      "destination": "/color/copper-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/coral-color",
+      "destination": "/color/coral-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/coral-pink",
+      "destination": "/color/coral-pink",
+      "permanent": true
+    },
+    {
+      "source": "/colors/cream",
+      "destination": "/color/cream",
+      "permanent": true
+    },
+    {
+      "source": "/colors/cream-color",
+      "destination": "/color/cream-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/creme-color",
+      "destination": "/color/creme-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/crimson-color",
+      "destination": "/color/crimson-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/cyan",
+      "destination": "/color/cyan",
+      "permanent": true
+    },
+    {
+      "source": "/colors/dark-blue",
+      "destination": "/color/dark-blue",
+      "permanent": true
+    },
+    {
+      "source": "/colors/dark-green",
+      "destination": "/color/dark-green",
+      "permanent": true
+    },
+    {
+      "source": "/colors/dark-heather-color",
+      "destination": "/color/dark-heather-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/dark-red",
+      "destination": "/color/dark-red",
+      "permanent": true
+    },
+    {
+      "source": "/colors/deep-blue",
+      "destination": "/color/deep-blue",
+      "permanent": true
+    },
+    {
+      "source": "/colors/deep-purple",
+      "destination": "/color/deep-purple",
+      "permanent": true
+    },
+    {
+      "source": "/colors/diamond",
+      "destination": "/color/diamond",
+      "permanent": true
+    },
+    {
+      "source": "/colors/dusty-blue",
+      "destination": "/color/dusty-blue",
+      "permanent": true
+    },
+    {
+      "source": "/colors/dusty-rose",
+      "destination": "/color/dusty-rose",
+      "permanent": true
+    },
+    {
+      "source": "/colors/ebony-color",
+      "destination": "/color/ebony-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/ecru-color",
+      "destination": "/color/ecru-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/eggplant-color",
+      "destination": "/color/eggplant-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/eggshell-color",
+      "destination": "/color/eggshell-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/electric-blue",
+      "destination": "/color/electric-blue",
+      "permanent": true
+    },
+    {
+      "source": "/colors/emerald-color",
+      "destination": "/color/emerald-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/emerald-green",
+      "destination": "/color/emerald-green",
+      "permanent": true
+    },
+    {
+      "source": "/colors/espresso-color",
+      "destination": "/color/espresso-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/evergreen",
+      "destination": "/color/evergreen",
+      "permanent": true
+    },
+    {
+      "source": "/colors/fawn-color",
+      "destination": "/color/fawn-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/forest-green",
+      "destination": "/color/forest-green",
+      "permanent": true
+    },
+    {
+      "source": "/colors/fuchsia",
+      "destination": "/color/fuchsia",
+      "permanent": true
+    },
+    {
+      "source": "/colors/garnet-color",
+      "destination": "/color/garnet-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/ginger-color",
+      "destination": "/color/ginger-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/gold-color",
+      "destination": "/color/gold-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/goldenrod",
+      "destination": "/color/goldenrod",
+      "permanent": true
+    },
+    {
+      "source": "/colors/graphite-color",
+      "destination": "/color/graphite-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/gray",
+      "destination": "/color/gray",
+      "permanent": true
+    },
+    {
+      "source": "/colors/gray-color",
+      "destination": "/color/gray-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/green",
+      "destination": "/color/green",
+      "permanent": true
+    },
+    {
+      "source": "/colors/greige",
+      "destination": "/color/greige",
+      "permanent": true
+    },
+    {
+      "source": "/colors/grey",
+      "destination": "/color/grey",
+      "permanent": true
+    },
+    {
+      "source": "/colors/grey-color",
+      "destination": "/color/grey-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/grey-hair-color",
+      "destination": "/color/grey-hair-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/gunmetal-color",
+      "destination": "/color/gunmetal-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/happy-color",
+      "destination": "/color/happy-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/hazel-color",
+      "destination": "/color/hazel-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/hazel-eye-color",
+      "destination": "/color/hazel-eye-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/heather-color",
+      "destination": "/color/heather-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/heliconia-color",
+      "destination": "/color/heliconia-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/heliotrope",
+      "destination": "/color/heliotrope",
+      "permanent": true
+    },
+    {
+      "source": "/colors/hickory-color",
+      "destination": "/color/hickory-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/honey-color",
+      "destination": "/color/honey-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/hot-pink",
+      "destination": "/color/hot-pink",
+      "permanent": true
+    },
+    {
+      "source": "/colors/hunter-green",
+      "destination": "/color/hunter-green",
+      "permanent": true
+    },
+    {
+      "source": "/colors/indigo",
+      "destination": "/color/indigo",
+      "permanent": true
+    },
+    {
+      "source": "/colors/iridescent-color",
+      "destination": "/color/iridescent-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/ivory-color",
+      "destination": "/color/ivory-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/jade-color",
+      "destination": "/color/jade-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/juniper-color",
+      "destination": "/color/juniper-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/kelly-green",
+      "destination": "/color/kelly-green",
+      "permanent": true
+    },
+    {
+      "source": "/colors/khaki-color",
+      "destination": "/color/khaki-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/lavender",
+      "destination": "/color/lavender",
+      "permanent": true
+    },
+    {
+      "source": "/colors/lemon-color",
+      "destination": "/color/lemon-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/light-blue",
+      "destination": "/color/light-blue",
+      "permanent": true
+    },
+    {
+      "source": "/colors/light-brown",
+      "destination": "/color/light-brown",
+      "permanent": true
+    },
+    {
+      "source": "/colors/light-green",
+      "destination": "/color/light-green",
+      "permanent": true
+    },
+    {
+      "source": "/colors/light-pink",
+      "destination": "/color/light-pink",
+      "permanent": true
+    },
+    {
+      "source": "/colors/light-purple",
+      "destination": "/color/light-purple",
+      "permanent": true
+    },
+    {
+      "source": "/colors/lilac-color",
+      "destination": "/color/lilac-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/lime-color",
+      "destination": "/color/lime-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/linen-color",
+      "destination": "/color/linen-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/magenta",
+      "destination": "/color/magenta",
+      "permanent": true
+    },
+    {
+      "source": "/colors/mahogany-color",
+      "destination": "/color/mahogany-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/marigold",
+      "destination": "/color/marigold",
+      "permanent": true
+    },
+    {
+      "source": "/colors/maroon",
+      "destination": "/color/maroon",
+      "permanent": true
+    },
+    {
+      "source": "/colors/marron",
+      "destination": "/color/marron",
+      "permanent": true
+    },
+    {
+      "source": "/colors/marron-color",
+      "destination": "/color/marron-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/mauve",
+      "destination": "/color/mauve",
+      "permanent": true
+    },
+    {
+      "source": "/colors/merlot",
+      "destination": "/color/merlot",
+      "permanent": true
+    },
+    {
+      "source": "/colors/midnight-blue",
+      "destination": "/color/midnight-blue",
+      "permanent": true
+    },
+    {
+      "source": "/colors/mint-color",
+      "destination": "/color/mint-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/mocha-color",
+      "destination": "/color/mocha-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/mocha-mousse",
+      "destination": "/color/mocha-mousse",
+      "permanent": true
+    },
+    {
+      "source": "/colors/mulberry-color",
+      "destination": "/color/mulberry-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/mustard-color",
+      "destination": "/color/mustard-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/navy-color",
+      "destination": "/color/navy-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/neon-color",
+      "destination": "/color/neon-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/neutral-color",
+      "destination": "/color/neutral-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/new-color",
+      "destination": "/color/new-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/nude-color",
+      "destination": "/color/nude-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/obsidian-color",
+      "destination": "/color/obsidian-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/ocean-blue",
+      "destination": "/color/ocean-blue",
+      "permanent": true
+    },
+    {
+      "source": "/colors/ocean-teal",
+      "destination": "/color/ocean-teal",
+      "permanent": true
+    },
+    {
+      "source": "/colors/ocher-color",
+      "destination": "/color/ocher-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/ochre",
+      "destination": "/color/ochre",
+      "permanent": true
+    },
+    {
+      "source": "/colors/olive-color",
+      "destination": "/color/olive-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/olive-skin-color",
+      "destination": "/color/olive-skin-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/ombre-color",
+      "destination": "/color/ombre-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/onyx-color",
+      "destination": "/color/onyx-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/opal-color",
+      "destination": "/color/opal-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/orange",
+      "destination": "/color/orange",
+      "permanent": true
+    },
+    {
+      "source": "/colors/orchid-color",
+      "destination": "/color/orchid-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/pastel-color",
+      "destination": "/color/pastel-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/pastel-colors",
+      "destination": "/color/pastel-colors",
+      "permanent": true
+    },
+    {
+      "source": "/colors/peach",
+      "destination": "/color/peach",
+      "permanent": true
+    },
+    {
+      "source": "/colors/peach-color",
+      "destination": "/color/peach-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/peach-fuzz",
+      "destination": "/color/peach-fuzz",
+      "permanent": true
+    },
+    {
+      "source": "/colors/pearl-color",
+      "destination": "/color/pearl-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/periwinkle",
+      "destination": "/color/periwinkle",
+      "permanent": true
+    },
+    {
+      "source": "/colors/pewter-color",
+      "destination": "/color/pewter-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/pink",
+      "destination": "/color/pink",
+      "permanent": true
+    },
+    {
+      "source": "/colors/platinum-color",
+      "destination": "/color/platinum-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/plum-color",
+      "destination": "/color/plum-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/powder-blue",
+      "destination": "/color/powder-blue",
+      "permanent": true
+    },
+    {
+      "source": "/colors/puce-color",
+      "destination": "/color/puce-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/purple",
+      "destination": "/color/purple",
+      "permanent": true
+    },
+    {
+      "source": "/colors/rainbow-color",
+      "destination": "/color/rainbow-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/rarest-eye-color",
+      "destination": "/color/rarest-eye-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/raspberry-color",
+      "destination": "/color/raspberry-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/red",
+      "destination": "/color/red",
+      "permanent": true
+    },
+    {
+      "source": "/colors/red-orange",
+      "destination": "/color/red-orange",
+      "permanent": true
+    },
+    {
+      "source": "/colors/rose-color",
+      "destination": "/color/rose-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/rose-gold",
+      "destination": "/color/rose-gold",
+      "permanent": true
+    },
+    {
+      "source": "/colors/royal-blue",
+      "destination": "/color/royal-blue",
+      "permanent": true
+    },
+    {
+      "source": "/colors/royal-purple",
+      "destination": "/color/royal-purple",
+      "permanent": true
+    },
+    {
+      "source": "/colors/ruby-color",
+      "destination": "/color/ruby-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/ruby-red",
+      "destination": "/color/ruby-red",
+      "permanent": true
+    },
+    {
+      "source": "/colors/russet-color",
+      "destination": "/color/russet-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/rust-color",
+      "destination": "/color/rust-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/sable-color",
+      "destination": "/color/sable-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/saffron-color",
+      "destination": "/color/saffron-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/sage",
+      "destination": "/color/sage",
+      "permanent": true
+    },
+    {
+      "source": "/colors/sage-color",
+      "destination": "/color/sage-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/sage-green",
+      "destination": "/color/sage-green",
+      "permanent": true
+    },
+    {
+      "source": "/colors/salmon-color",
+      "destination": "/color/salmon-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/sand-color",
+      "destination": "/color/sand-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/sapphire-color",
+      "destination": "/color/sapphire-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/scarlet-color",
+      "destination": "/color/scarlet-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/sea-green",
+      "destination": "/color/sea-green",
+      "permanent": true
+    },
+    {
+      "source": "/colors/seafoam-color",
+      "destination": "/color/seafoam-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/sepia",
+      "destination": "/color/sepia",
+      "permanent": true
+    },
+    {
+      "source": "/colors/shades-of-blue",
+      "destination": "/color/shades-of-blue",
+      "permanent": true
+    },
+    {
+      "source": "/colors/shades-of-green",
+      "destination": "/color/shades-of-green",
+      "permanent": true
+    },
+    {
+      "source": "/colors/sienna-color",
+      "destination": "/color/sienna-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/silver",
+      "destination": "/color/silver",
+      "permanent": true
+    },
+    {
+      "source": "/colors/skin-color",
+      "destination": "/color/skin-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/skin-tone-beige",
+      "destination": "/color/skin-tone-beige",
+      "permanent": true
+    },
+    {
+      "source": "/colors/sky-blue",
+      "destination": "/color/sky-blue",
+      "permanent": true
+    },
+    {
+      "source": "/colors/slate-color",
+      "destination": "/color/slate-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/solid-color",
+      "destination": "/color/solid-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/steel-blue",
+      "destination": "/color/steel-blue",
+      "permanent": true
+    },
+    {
+      "source": "/colors/sunset-orange",
+      "destination": "/color/sunset-orange",
+      "permanent": true
+    },
+    {
+      "source": "/colors/tan",
+      "destination": "/color/tan",
+      "permanent": true
+    },
+    {
+      "source": "/colors/tan-color",
+      "destination": "/color/tan-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/tangerine",
+      "destination": "/color/tangerine",
+      "permanent": true
+    },
+    {
+      "source": "/colors/taupe",
+      "destination": "/color/taupe",
+      "permanent": true
+    },
+    {
+      "source": "/colors/tawny-color",
+      "destination": "/color/tawny-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/teal",
+      "destination": "/color/teal",
+      "permanent": true
+    },
+    {
+      "source": "/colors/teal-blue",
+      "destination": "/color/teal-blue",
+      "permanent": true
+    },
+    {
+      "source": "/colors/terra-cotta",
+      "destination": "/color/terra-cotta",
+      "permanent": true
+    },
+    {
+      "source": "/colors/terracotta-color",
+      "destination": "/color/terracotta-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/tiffany-blue",
+      "destination": "/color/tiffany-blue",
+      "permanent": true
+    },
+    {
+      "source": "/colors/topaz-color",
+      "destination": "/color/topaz-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/turquoise",
+      "destination": "/color/turquoise",
+      "permanent": true
+    },
+    {
+      "source": "/colors/ultraviolet",
+      "destination": "/color/ultraviolet",
+      "permanent": true
+    },
+    {
+      "source": "/colors/umber-color",
+      "destination": "/color/umber-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/velvet-color",
+      "destination": "/color/velvet-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/vermilion-color",
+      "destination": "/color/vermilion-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/vermillion",
+      "destination": "/color/vermillion",
+      "permanent": true
+    },
+    {
+      "source": "/colors/violet",
+      "destination": "/color/violet",
+      "permanent": true
+    },
+    {
+      "source": "/colors/viridian",
+      "destination": "/color/viridian",
+      "permanent": true
+    },
+    {
+      "source": "/colors/walnut-color",
+      "destination": "/color/walnut-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/water-color-flowers",
+      "destination": "/color/water-color-flowers",
+      "permanent": true
+    },
+    {
+      "source": "/colors/weird-color",
+      "destination": "/color/weird-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/white",
+      "destination": "/color/white",
+      "permanent": true
+    },
+    {
+      "source": "/colors/white-color",
+      "destination": "/color/white-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/wine-color",
+      "destination": "/color/wine-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/wine-red",
+      "destination": "/color/wine-red",
+      "permanent": true
+    },
+    {
+      "source": "/colors/wisteria-color",
+      "destination": "/color/wisteria-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/xanadu",
+      "destination": "/color/xanadu",
+      "permanent": true
+    },
+    {
+      "source": "/colors/yellow",
+      "destination": "/color/yellow",
+      "permanent": true
+    }
+  ]
 }

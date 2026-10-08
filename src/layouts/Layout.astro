@@ -6,9 +6,10 @@ interface Props {
   title: string;
   description?: string;
   noindex?: boolean;
+  structuredData?: object[];
 }
 
-const { title, description = 'Discover beautiful color palettes, explore colors, and find inspiration for your next design project.', noindex = false } = Astro.props;
+const { title, description = 'Discover beautiful color palettes, explore colors, and find inspiration for your next design project.', noindex = false, structuredData = [] } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
@@ -25,6 +26,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    {structuredData.map(data => <script type="application/ld+json" set:html={JSON.stringify(data)} />)}
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />

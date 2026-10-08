@@ -1,14 +1,13 @@
 import { defineConfig } from 'astro/config';
 import react from '@astrojs/react';
 import sitemap from '@astrojs/sitemap';
+import { getColorRouteSlugs, noindexColorSlugs } from './src/lib/color-routes.mjs';
 
+const canonicalSlugs = new Set(getColorRouteSlugs());
 const excludedSitemapPaths = new Set([
-  '/colors/mucus-plug-color-chart',
-  '/colors/color-factory-nyc',
-  '/colors/color-factory-chicago',
-  '/colors/color-guard',
-  '/colors/color-maze',
-  '/colors/color-sheet',
+  ...[...canonicalSlugs].map(slug => `/colors/${slug}`),
+  ...[...noindexColorSlugs].map(slug => `/colors/${slug}`),
+  ...[...noindexColorSlugs].map(slug => `/color/${slug}`),
 ]);
 
 export default defineConfig({

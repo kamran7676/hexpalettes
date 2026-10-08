@@ -4,12 +4,13 @@ import Navbar from '../components/Navbar.astro';
 import { Palette, Droplet, Sparkles } from 'lucide-react';
 import { getAllColors } from '../lib/colors';
 import { getAllPalettes } from '../lib/palettes';
+import { noindexColorSlugs } from '../lib/color-routes.mjs';
 
 const colors = await getAllColors();
 const palettes = await getAllPalettes();
 
 const featuredPalettes = palettes.slice(0, 3);
-const displayColors = colors.slice(0, 8);
+const displayColors = colors.filter(color => !noindexColorSlugs.has(color.slug)).slice(0, 8);
 ---
 
 <Layout
@@ -105,7 +106,7 @@ const displayColors = colors.slice(0, 8);
         <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5">
           {displayColors.map((color, i) => (
             <a
-              href={`/colors/${color.slug}`}
+              href={`/color/${color.slug}`}
               class={`group card animate-slide-up stagger-${(i % 6) + 1}`}
               style={{ opacity: 0 }}
             >

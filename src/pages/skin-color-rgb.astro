@@ -1,0 +1,19 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import { getAllColors } from '../lib/colors';
+import { noindexColorSlugs } from '../lib/color-routes.mjs';
+const allColors = await getAllColors();
+const skinColors = [...new Map(allColors.filter(color => !noindexColorSlugs.has(color.slug) && /skin|nude|almond|mocha/i.test(`${color.name} ${color.slug}`)).map(color => [color.slug, color])).values()];
+const title = 'Skin Color RGB: Skin Tone HEX and RGB Values | HexPalettes';
+const description = 'Find skin color RGB values and HEX codes for a range of skin tone colors. Browse shades from light beige to rich brown and open each color code page.';
+---
+<Layout title={title} description={description}>
+  <Navbar />
+  <main class="container mx-auto px-4 py-10 sm:px-6"><div class="mx-auto max-w-5xl">
+    <nav class="mb-6 text-sm text-gray-500"><a href="/">Home</a> / <a href="/colors">Colors</a> / Skin color RGB</nav>
+    <h1 class="mb-4 text-4xl font-bold text-gray-900 dark:text-white">Skin Color RGB</h1>
+    <p class="mb-8 max-w-3xl text-gray-600 dark:text-gray-300">Skin tones span a wide range of colors. Find each shade's RGB and HEX values below.</p>
+    <div class="overflow-x-auto rounded-2xl border border-gray-200 dark:border-white/10"><table class="w-full text-left"><thead><tr class="bg-gray-50 dark:bg-white/5"><th class="p-4">Color</th><th class="p-4">HEX</th><th class="p-4">RGB</th></tr></thead><tbody>{skinColors.map(color => { const rgb = [1,3,5].map(i => parseInt(color.hexCode.slice(i,i+2),16)).join(', '); return <tr class="border-t border-gray-200 dark:border-white/10"><td class="p-4"><a class="inline-flex items-center gap-3 text-primary-600" href={`/color/${color.slug}`}><span class="h-8 w-8 rounded-md" style={`background:${color.hexCode}`}></span>{color.name}</a></td><td class="p-4 font-mono">{color.hexCode}</td><td class="p-4 font-mono">rgb({rgb})</td></tr>; })}</tbody></table></div>
+  </div></main>
+</Layout>

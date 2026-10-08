@@ -3,6 +3,7 @@ import ColorLayout from '../../layouts/ColorLayout.astro';
 import { Tag, Palette, Copy } from 'lucide-react';
 import { getAllColors } from '../../lib/colors';
 import { getMetaDescription } from '../../lib/meta-description';
+import { noindexColorSlugs } from '../../lib/color-routes.mjs';
 
 export async function getStaticPaths() {
   const colors = await getAllColors();
@@ -26,6 +27,7 @@ const colors = await getAllColors();
 
 const relatedColors = colors
     .filter(c => c.slug !== color.slug)
+    .filter(c => !noindexColorSlugs.has(c.slug))
     .map(c => ({
       ...c,
       matchingTags: c.tags.filter(tag => color.tags.includes(tag))
@@ -43,20 +45,12 @@ function getContrastColor(hexColor: string) {
 }
 
 const textColor = getContrastColor(color.hexCode);
-const noindexSlugs = new Set([
-  'mucus-plug-color-chart',
-  'color-factory-nyc',
-  'color-factory-chicago',
-  'color-guard',
-  'color-maze',
-  'color-sheet',
-]);
 ---
 
 <ColorLayout
   title={`${color.name} Color (${color.hexCode}): Meaning & Combinations`}
   description={getMetaDescription(color.content, color.name)}
-  noindex={noindexSlugs.has(color.slug)}
+  noindex={noindexColorSlugs.has(color.slug)}
 >
   <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
     <div class="lg:col-span-2">
@@ -186,7 +180,7 @@ const noindexSlugs = new Set([
         <div class="space-y-3">
           {relatedColors.map(related => (
               <a
-                  href={`/colors/${related.slug}`}
+                  href={`/color/${related.slug}`}
                   class="block group"
               >
                 <div class="flex items-center space-x-3">

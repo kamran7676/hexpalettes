@@ -4,6 +4,7 @@ import { Droplet } from 'lucide-react';
 import { getAllColors } from '../../lib/colors';
 import { getAllPalettes } from '../../lib/palettes';
 import { getMetaDescription } from '../../lib/meta-description';
+import { noindexColorSlugs } from '../../lib/color-routes.mjs';
 
 export async function getStaticPaths() {
   const palettes = await getAllPalettes();
@@ -18,7 +19,7 @@ const colors = await getAllColors();
 
 const paletteColors = palette.colors
   .map(colorSlug => colors.find(c => c.slug === colorSlug))
-  .filter(Boolean);
+  .filter(color => color && !noindexColorSlugs.has(color.slug));
 ---
 
 <PaletteLayout
@@ -50,7 +51,7 @@ const paletteColors = palette.colors
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
     {paletteColors.map(color => color && (
       <a
-        href={`/colors/${color.slug}`}
+        href={`/color/${color.slug}`}
         class="group card"
       >
         <div
