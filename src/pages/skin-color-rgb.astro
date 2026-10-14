@@ -7,13 +7,27 @@ const allColors = await getAllColors();
 const skinColors = [...new Map(allColors.filter(color => !noindexColorSlugs.has(color.slug) && /skin|nude|almond|mocha/i.test(`${color.name} ${color.slug}`)).map(color => [color.slug, color])).values()];
 const title = 'Skin Color RGB: Skin Tone HEX and RGB Values | HexPalettes';
 const description = 'Find skin color RGB values and HEX codes for a range of skin tone colors. Browse shades from light beige to rich brown and open each color code page.';
+const faqs = [
+  ['What is the RGB code for skin color?', 'Skin color is not one fixed color. Use the RGB value for the specific skin tone swatch that best matches your reference.'],
+  ['What is the HEX code for a skin tone?', 'Each tone has its own HEX code. Select a swatch in this table to view its exact color values and related shades.'],
+  ['How do I use skin tone colors in a design?', 'Compare several tones in context and check contrast for text and controls. Avoid treating one swatch as representative of every person.'],
+  ['Are these RGB values exact for every display?', 'The listed values are digital color definitions, but displays and color profiles can render them differently. Use a calibrated workflow when precision matters.'],
+];
+const structuredData = [{ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqs.map(([name, text]) => ({ '@type': 'Question', name, acceptedAnswer: { '@type': 'Answer', text } })) }];
 ---
-<Layout title={title} description={description}>
+<Layout title={title} description={description} structuredData={structuredData}>
   <Navbar />
   <main class="container mx-auto px-4 py-10 sm:px-6"><div class="mx-auto max-w-5xl">
     <nav class="mb-6 text-sm text-gray-500"><a href="/">Home</a> / <a href="/colors">Colors</a> / Skin color RGB</nav>
     <h1 class="mb-4 text-4xl font-bold text-gray-900 dark:text-white">Skin Color RGB</h1>
     <p class="mb-8 max-w-3xl text-gray-600 dark:text-gray-300">Skin tones span a wide range of colors. Find each shade's RGB and HEX values below.</p>
+    <section class="prose prose-lg prose-primary dark:prose-invert mb-8 max-w-3xl">
+      <h2>How to read skin tone RGB and HEX values</h2>
+      <p>This reference lists a selection of skin tone colors with their digital RGB channels and HEX notation. RGB records red, green, and blue as values from 0 to 255; HEX expresses the same channels in a compact format used by CSS and design applications. Select a color name to open its color-code page, where you can also review HSL and approximate CMYK conversions.</p>
+      <p>Skin tones are diverse and vary with lighting, surroundings, and the medium being represented. Treat the swatches as a practical color reference rather than a complete range or a substitute for a person's own description. For illustration or interface work, compare several tones against the actual background and check that labels remain legible. For print, screen colors may shift when converted to ink, so review the values in the intended output profile.</p>
+      <h2>Frequently asked questions</h2>
+      {faqs.map(([question, answer]) => <><h3>{question}</h3><p>{answer}</p></>)}
+    </section>
     <div class="overflow-x-auto rounded-2xl border border-gray-200 dark:border-white/10"><table class="w-full text-left"><thead><tr class="bg-gray-50 dark:bg-white/5"><th class="p-4">Color</th><th class="p-4">HEX</th><th class="p-4">RGB</th></tr></thead><tbody>{skinColors.map(color => { const rgb = [1,3,5].map(i => parseInt(color.hexCode.slice(i,i+2),16)).join(', '); return <tr class="border-t border-gray-200 dark:border-white/10"><td class="p-4"><a class="inline-flex items-center gap-3 text-primary-600" href={`/color/${color.slug}`}><span class="h-8 w-8 rounded-md" style={`background:${color.hexCode}`}></span>{color.name}</a></td><td class="p-4 font-mono">{color.hexCode}</td><td class="p-4 font-mono">rgb({rgb})</td></tr>; })}</tbody></table></div>
   </div></main>
 </Layout>

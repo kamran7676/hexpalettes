@@ -8,17 +8,19 @@ interface Props {
   description?: string;
   backLink?: string;
   backText?: string;
+  structuredData?: object[];
 }
 
 const {
   title,
   description,
   backLink = "/palettes",
-  backText = "Back to Palettes"
+  backText = "Back to Palettes",
+  structuredData = [],
 } = Astro.props;
 ---
 
-<Layout title={title} description={description}>
+<Layout title={title} description={description} structuredData={structuredData}>
   <Navbar />
   <main class="container py-8 lg:py-12">
     <div class="max-w-7xl mx-auto">

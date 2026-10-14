@@ -20,11 +20,20 @@ const colors = await getAllColors();
 const paletteColors = palette.colors
   .map(colorSlug => colors.find(c => c.slug === colorSlug))
   .filter(color => color && !noindexColorSlugs.has(color.slug));
+const paletteDescription = `${palette.name} brings together ${paletteColors.map(color => color!.name).join(', ')}. Compare their HEX values and swatches to plan a balanced ${palette.tags.join(', ')} color scheme.`;
+const faqs = [
+  [`What is in the ${palette.name.toLowerCase()} palette?`, `This palette currently includes ${paletteColors.map(color => `${color!.name} (${color!.hexCode})`).join(', ')}.`],
+  [`How can I use the ${palette.name.toLowerCase()} palette?`, `Use one color as the dominant surface, a second for supporting elements, and reserve an accent for emphasis. Check text contrast in your final layout.`],
+  ['Can I use these colors for web design?', `Yes. Copy a color's HEX value from its color-code page, then test text and interface combinations for readable contrast.`],
+  ['How do I adjust this color palette?', 'Compare the swatches with your project imagery and brand colors. Adjust brightness or saturation in your design tool, then retest contrast and consistency.'],
+];
+const structuredData = [{ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqs.map(([name, text]) => ({ '@type': 'Question', name, acceptedAnswer: { '@type': 'Answer', text } })) }];
 ---
 
 <PaletteLayout
   title={`${palette.name} — Palette`}
-  description={getMetaDescription(palette.description, palette.name)}
+  description={getMetaDescription(paletteDescription, palette.name)}
+  structuredData={structuredData}
 >
   <div class="card mb-8">
     <div class="flex h-52">
@@ -47,6 +56,15 @@ const paletteColors = palette.colors
       </div>
     </div>
   </div>
+
+  <article class="prose prose-lg prose-primary dark:prose-invert max-w-none py-8">
+    <h2>Working with the {palette.name.toLowerCase()} color palette</h2>
+    <p>This collection groups colors tagged for {palette.tags.join(', ')}. It includes {paletteColors.map(color => `${color!.name} (${color!.hexCode})`).join(', ')}, so you can compare each swatch side by side before applying it to a project. The color pages linked below show additional values and calculated tints, shades, and relationships that can help when refining a scheme.</p>
+    <p>When using the {palette.name.toLowerCase()} palette, start by assigning each color a role. A dominant color can establish the main surface or large visual area; supporting shades can organize sections; and a brighter or darker accent can draw attention to a small number of controls or details. The exact balance depends on the image, typography, and material around the colors, so treat the swatches as a starting point and preview them in context.</p>
+    <p>For digital interfaces, check contrast for text, icons, and focus states rather than relying on hue alone. For print, compare a proof because paper, ink, and color profiles can shift the result. Open any color link to copy its HEX, RGB, HSL, or CMYK reference values. Keeping those values in a shared design token list helps maintain consistency as the palette is reused across pages and assets.</p>
+    <h2>Frequently asked questions about this palette</h2>
+    {faqs.map(([question, answer]) => <><h3>{question}</h3><p>{answer}</p></>)}
+  </article>
 
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
     {paletteColors.map(color => color && (

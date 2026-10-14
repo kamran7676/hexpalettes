@@ -37,15 +37,18 @@ const title = `${displayName} Color Code: Hex, RGB, HSL, CMYK | HexPalettes`;
 const description = `${displayName} color code: ${hex} in HEX and ${rgb}. View HSL ${hsl} and CMYK ${cmyk}, plus shades, tints, and color combinations.`;
 const url = `https://hexpalettes.vercel.app/color/${color.slug}`;
 const structuredData = [
-  { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://hexpalettes.vercel.app/' },
-    { '@type': 'ListItem', position: 2, name: 'Colors', item: 'https://hexpalettes.vercel.app/colors' },
-    { '@type': 'ListItem', position: 3, name: color.name, item: url },
-  ] },
   { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: [
     { '@type': 'Question', name: `What is the hex code of ${color.name}?`, acceptedAnswer: { '@type': 'Answer', text: `The hex code of ${color.name} is ${hex}.` } },
     { '@type': 'Question', name: `What is the RGB value of ${color.name}?`, acceptedAnswer: { '@type': 'Answer', text: `The RGB value of ${color.name} is ${rgb}.` } },
+    { '@type': 'Question', name: `What colors go with ${color.name}?`, acceptedAnswer: { '@type': 'Answer', text: `${color.name} can be paired with its complementary, analogous, and triadic colors. Test the combinations against the intended background and text.` } },
+    { '@type': 'Question', name: `What are the HSL and CMYK values for ${color.name}?`, acceptedAnswer: { '@type': 'Answer', text: `The HSL value is ${hsl} and the approximate CMYK value is ${cmyk}.` } },
   ] },
+];
+const faqs = [
+  [`What is the hex code of ${color.name}?`, `The hex code of ${color.name} is ${hex}.`],
+  [`What is the RGB value of ${color.name}?`, `The RGB value is ${rgb}, with red, green, and blue channels shown in that order.`],
+  [`What colors go with ${color.name}?`, `${color.name} can be paired with complementary, analogous, or triadic hues. Check contrast and context before choosing a combination.`],
+  [`What are the HSL and CMYK values for ${color.name}?`, `The HSL value is ${hsl}; the approximate CMYK conversion is ${cmyk}. CMYK output can vary by printer and color profile.`],
 ];
 ---
 <Layout title={title} description={description} noindex={noindexColorSlugs.has(color.slug)} structuredData={structuredData}>
@@ -62,7 +65,13 @@ const structuredData = [
       </div>
       <section class="py-8"><h2 class="mb-4 text-2xl font-bold text-gray-900 dark:text-white">{color.name} shades and tints</h2><div class="grid grid-cols-3 gap-3 sm:grid-cols-6">{[...shades, ...tints].map((value, i) => <div><div class="h-20 rounded-xl" style={`background:${value}`}></div><p class="mt-2 text-xs text-gray-500">{i < 3 ? 'Shade' : 'Tint'} · {i + 1}</p></div>)}</div></section>
       <section class="py-4"><h2 class="mb-4 text-2xl font-bold text-gray-900 dark:text-white">Colors related to {color.name}</h2><div class="grid gap-4 sm:grid-cols-3">{related.map(item => <div class="rounded-xl border border-gray-200 p-4 dark:border-white/10"><div class="mb-3 h-16 rounded-lg" style={`background:${item.value}`}></div><h3 class="font-semibold text-gray-900 dark:text-white">{item.name}</h3><code class="text-sm text-gray-500">{item.value}</code></div>)}</div></section>
-      <section class="py-8"><h2 class="mb-4 text-2xl font-bold text-gray-900 dark:text-white">{color.name} color code FAQ</h2><h3 class="mb-2 text-lg font-semibold">What is the hex code of {color.name}?</h3><p class="mb-5 text-gray-600 dark:text-gray-300">The hex code of {color.name} is <code>{hex}</code>.</p><h3 class="mb-2 text-lg font-semibold">What is the RGB value of {color.name}?</h3><p class="text-gray-600 dark:text-gray-300">The RGB value of {color.name} is <code>{rgb}</code>.</p></section>
+      <article class="prose prose-lg prose-primary dark:prose-invert max-w-none py-8">
+        <h2>{displayName} color values and uses</h2>
+        <p>{displayName} is represented here by <code>{hex}</code>. In digital artwork, websites, and interface design, HEX is a compact way to specify the exact red, green, and blue channels. The equivalent RGB value is <code>{rgb}</code>; HSL <code>{hsl}</code> describes hue, saturation, and lightness, while CMYK <code>{cmyk}</code> offers a starting point for print workflows. These conversions are useful when moving a color between design tools, though displays, printers, and color profiles can produce different results.</p>
+        <p>Use {displayName.toLowerCase()} alongside the swatches above to compare lighter tints, deeper shades, and nearby hues. A restrained palette can reserve this color for a focal element and use a neutral background for supporting content. For text and controls, check contrast at the size and weight where the color will appear; a swatch that looks clear on a large area may be harder to read in small labels. Save the HEX or RGB value in your design system so the same color can be reused consistently.</p>
+        <h2>Frequently asked questions about {displayName}</h2>
+        {faqs.map(([question, answer]) => <><h3>{question}</h3><p>{answer}</p></>)}
+      </article>
       <p class="pb-10"><a class="text-primary-600" href="/colors">Browse all colors</a></p>
     </div>
   </main>
