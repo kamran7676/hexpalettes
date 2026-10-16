@@ -1,9 +1,10 @@
 ---
 title: "Lucky Color 2026: Verdant Green"
 slug: lucky-color-2026
-date: "2026-01-01"
+date: "2026-05-12"
 hexCode: "#4A7C59"
 description: "Verdant Green, the lucky color for 2026, represents growth, renewal, and harmony — a grounding force in a year of transformation and new beginnings."
+noindex: true
 featured: true
 ---
 

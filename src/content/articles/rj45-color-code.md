@@ -1,9 +1,10 @@
 ---
 title: "Understanding RJ45 Color Code: A Comprehensive Guide"
 slug: rj45-color-code
-date: "2023-10-05"
+date: "2025-02-24"
 hexCode: "#0054A6"
 description: "An in-depth look at the RJ45 color code standards used for Ethernet cabling, including T568A and T568B wiring schemes, best practices, and applications."
+noindex: true
 featured: true
 ---
 

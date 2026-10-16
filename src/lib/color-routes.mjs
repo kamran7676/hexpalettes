@@ -15,9 +15,23 @@ export const noindexColorSlugs = new Set([
   'color-sheet',
 ]);
 
+// Duplicate color pages consolidated into one canonical page (alias -> canonical).
+export const colorSlugAliases = new Map([
+  ['amber-color', 'amber'],
+  ['cream', 'cream-color'],
+  ['gray-color', 'gray'],
+  ['grey', 'gray'],
+  ['grey-color', 'gray'],
+  ['marron-color', 'marron'],
+  ['peach-color', 'peach'],
+  ['sage-color', 'sage'],
+  ['tan-color', 'tan'],
+  ['white-color', 'white'],
+]);
+
 export function getColorRouteSlugs() {
   return [...new Set(readdirSync(colorsDir)
     .filter(filename => filename.endsWith('.md'))
     .map(filename => matter(readFileSync(path.join(colorsDir, filename), 'utf8')).data.slug)
-    .filter(slug => typeof slug === 'string' && slug.length > 0))].sort();
+    .filter(slug => typeof slug === 'string' && slug.length > 0 && !colorSlugAliases.has(slug)))].sort();
 }

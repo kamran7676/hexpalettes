@@ -1,7 +1,7 @@
 ---
 title: "What Color is Alabaster?"
 slug: what-color-is-alabaster
-date: "2023-10-01"
+date: "2025-02-24"
 hexCode: "#F2E5D7"
 description: "Alabaster is a soft, creamy white hue often associated with elegance and sophistication. It is commonly used in design and architecture, evoking feelings of tranquility and purity."
 featured: true

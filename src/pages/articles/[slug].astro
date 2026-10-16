@@ -19,6 +19,7 @@ const { article } = Astro.props;
 <Layout
   title={`${article.title} — HexPalettes`}
   description={getMetaDescription(article.content, article.title)}
+  noindex={article.noindex}
 >
   <Navbar />
   <main class="container py-12 lg:py-16">

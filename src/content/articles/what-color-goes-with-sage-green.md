@@ -1,7 +1,7 @@
 ---
 title: "What Color Goes With Sage Green: The Ultimate Guide"
 slug: what-color-goes-with-sage-green
-date: "2026-03-01"
+date: "2026-05-12"
 hexCode: "#A8B5A0"
 description: "Sage green is one of the most versatile colors in design. Learn the best color combinations, styling tips, and real-world applications for this trendy shade."
 featured: false

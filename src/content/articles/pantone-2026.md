@@ -1,7 +1,7 @@
 ---
 title: "Pantone Color of the Year 2026: Cloud Dancer"
 slug: pantone-2026
-date: "2026-01-01"
+date: "2026-05-12"
 hexCode: "#F2F0EB"
 description: "Pantone announces PANTONE 11-4201 Cloud Dancer as Color of the Year 2026 — a lofty white symbolizing calm, clarity, and creative space in an overstimulated world."
 featured: true

@@ -1,7 +1,7 @@
 ---
 title: "Understanding Mauve: The Subtle Elegance of a Timeless Color"
 slug: what-color-is-mauve
-date: "2023-10-01"
+date: "2025-02-24"
 hexCode: "#E0B0FF"
 description: "Mauve is a soft, muted hue that sits between purple and pink on the color spectrum, evoking feelings of calmness and sophistication."
 featured: true

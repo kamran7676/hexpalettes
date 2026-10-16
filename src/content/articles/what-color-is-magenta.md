@@ -1,7 +1,7 @@
 ---
 title: "What Color is Magenta?"
 slug: what-color-is-magenta
-date: "2023-10-01"
+date: "2025-02-24"
 hexCode: "#FF00FF"
 description: "Magenta is a vibrant hue that is a mix of red and blue light, embodying energy, creativity, and uniqueness in various applications across the arts and sciences."
 featured: true

@@ -1,7 +1,7 @@
 ---
 title: "Pantone Color of the Year 2025: Celestial Blue"
 slug: pantone-2025
-date: "2025-01-01"
+date: "2025-02-24"
 hexCode: "#4B6CC1"
 description: "A transformative blue hue that bridges the digital and natural worlds, representing innovation and tranquility in an increasingly connected future."
 featured: true

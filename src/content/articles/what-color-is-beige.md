@@ -1,7 +1,7 @@
 ---
 title: "What Color is Beige?"
 slug: what-color-is-beige
-date: "2023-10-01"
+date: "2025-02-24"
 hexCode: "#F5F5DC"
 description: "Beige is a versatile and neutral color that embodies warmth and simplicity, often associated with comfort and elegance in various design contexts."
 featured: true

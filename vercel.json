@@ -2,6 +2,106 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/color/amber-color",
+      "destination": "/color/amber",
+      "permanent": true
+    },
+    {
+      "source": "/colors/amber-color",
+      "destination": "/color/amber",
+      "permanent": true
+    },
+    {
+      "source": "/color/cream",
+      "destination": "/color/cream-color",
+      "permanent": true
+    },
+    {
+      "source": "/colors/cream",
+      "destination": "/color/cream-color",
+      "permanent": true
+    },
+    {
+      "source": "/color/gray-color",
+      "destination": "/color/gray",
+      "permanent": true
+    },
+    {
+      "source": "/colors/gray-color",
+      "destination": "/color/gray",
+      "permanent": true
+    },
+    {
+      "source": "/color/grey",
+      "destination": "/color/gray",
+      "permanent": true
+    },
+    {
+      "source": "/colors/grey",
+      "destination": "/color/gray",
+      "permanent": true
+    },
+    {
+      "source": "/color/grey-color",
+      "destination": "/color/gray",
+      "permanent": true
+    },
+    {
+      "source": "/colors/grey-color",
+      "destination": "/color/gray",
+      "permanent": true
+    },
+    {
+      "source": "/color/marron-color",
+      "destination": "/color/marron",
+      "permanent": true
+    },
+    {
+      "source": "/colors/marron-color",
+      "destination": "/color/marron",
+      "permanent": true
+    },
+    {
+      "source": "/color/peach-color",
+      "destination": "/color/peach",
+      "permanent": true
+    },
+    {
+      "source": "/colors/peach-color",
+      "destination": "/color/peach",
+      "permanent": true
+    },
+    {
+      "source": "/color/sage-color",
+      "destination": "/color/sage",
+      "permanent": true
+    },
+    {
+      "source": "/colors/sage-color",
+      "destination": "/color/sage",
+      "permanent": true
+    },
+    {
+      "source": "/color/tan-color",
+      "destination": "/color/tan",
+      "permanent": true
+    },
+    {
+      "source": "/colors/tan-color",
+      "destination": "/color/tan",
+      "permanent": true
+    },
+    {
+      "source": "/color/white-color",
+      "destination": "/color/white",
+      "permanent": true
+    },
+    {
+      "source": "/colors/white-color",
+      "destination": "/color/white",
+      "permanent": true
+    },
+    {
       "source": "/colors/alabaster",
       "destination": "/color/alabaster",
       "permanent": true
@@ -19,11 +119,6 @@
     {
       "source": "/colors/amber",
       "destination": "/color/amber",
-      "permanent": true
-    },
-    {
-      "source": "/colors/amber-color",
-      "destination": "/color/amber-color",
       "permanent": true
     },
     {
@@ -297,11 +392,6 @@
       "permanent": true
     },
     {
-      "source": "/colors/cream",
-      "destination": "/color/cream",
-      "permanent": true
-    },
-    {
       "source": "/colors/cream-color",
       "destination": "/color/cream-color",
       "permanent": true
@@ -457,11 +547,6 @@
       "permanent": true
     },
     {
-      "source": "/colors/gray-color",
-      "destination": "/color/gray-color",
-      "permanent": true
-    },
-    {
       "source": "/colors/green",
       "destination": "/color/green",
       "permanent": true
@@ -469,16 +554,6 @@
     {
       "source": "/colors/greige",
       "destination": "/color/greige",
-      "permanent": true
-    },
-    {
-      "source": "/colors/grey",
-      "destination": "/color/grey",
-      "permanent": true
-    },
-    {
-      "source": "/colors/grey-color",
-      "destination": "/color/grey-color",
       "permanent": true
     },
     {
@@ -652,11 +727,6 @@
       "permanent": true
     },
     {
-      "source": "/colors/marron-color",
-      "destination": "/color/marron-color",
-      "permanent": true
-    },
-    {
       "source": "/colors/mauve",
       "destination": "/color/mauve",
       "permanent": true
@@ -797,11 +867,6 @@
       "permanent": true
     },
     {
-      "source": "/colors/peach-color",
-      "destination": "/color/peach-color",
-      "permanent": true
-    },
-    {
       "source": "/colors/peach-fuzz",
       "destination": "/color/peach-fuzz",
       "permanent": true
@@ -932,11 +997,6 @@
       "permanent": true
     },
     {
-      "source": "/colors/sage-color",
-      "destination": "/color/sage-color",
-      "permanent": true
-    },
-    {
       "source": "/colors/sage-green",
       "destination": "/color/sage-green",
       "permanent": true
@@ -1034,11 +1094,6 @@
     {
       "source": "/colors/tan",
       "destination": "/color/tan",
-      "permanent": true
-    },
-    {
-      "source": "/colors/tan-color",
-      "destination": "/color/tan-color",
       "permanent": true
     },
     {
@@ -1144,11 +1199,6 @@
     {
       "source": "/colors/white",
       "destination": "/color/white",
-      "permanent": true
-    },
-    {
-      "source": "/colors/white-color",
-      "destination": "/color/white-color",
       "permanent": true
     },
     {

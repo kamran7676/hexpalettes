@@ -11,6 +11,7 @@ export interface Article {
   description: string;
   content: string;
   featured: boolean;
+  noindex: boolean;
 }
 
 const ARTICLES_DIR = path.join(process.cwd(), 'src/content/articles');
@@ -33,6 +34,7 @@ export async function getAllArticles(): Promise<Article[]> {
           description: data.description,
           content: marked(content),
           featured: data.featured || false,
+          noindex: data.noindex === true,
         };
       })
   );

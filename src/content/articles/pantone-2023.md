@@ -1,7 +1,7 @@
 ---
 title: "Pantone Color of the Year 2023: Viva Magenta"
 slug: pantone-2023
-date: "2023-01-01"
+date: "2025-02-24"
 hexCode: "#BE3455"
 description: "A vibrant and empowering shade that balances warm and cool tones, representing strength and exuberance in the digital age."
 featured: true

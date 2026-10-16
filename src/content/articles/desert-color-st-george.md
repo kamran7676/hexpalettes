@@ -1,9 +1,10 @@
 ---
 title: "Desert Color St. George: A Harmonious Blend of Nature and Design"
 slug: desert-color-st-george
-date: "2023-10-01"
+date: "2025-02-24"
 hexCode: "#D6CFC4"
 description: "Desert Color St. George is a soothing, earthy hue inspired by the natural landscapes of St. George, Utah. This color reflects the serene beauty of desert environments and offers a calming influence in design."
+noindex: true
 featured: true
 ---
 

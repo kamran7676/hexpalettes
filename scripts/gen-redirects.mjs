@@ -1,5 +1,5 @@
 import { readFileSync, writeFileSync } from 'node:fs';
-import { getColorRouteSlugs, noindexColorSlugs } from '../src/lib/color-routes.mjs';
+import { colorSlugAliases, getColorRouteSlugs, noindexColorSlugs } from '../src/lib/color-routes.mjs';
 
 const vercelPath = new URL('../vercel.json', import.meta.url);
 const vercelConfig = JSON.parse(readFileSync(vercelPath, 'utf8'));
@@ -9,8 +9,13 @@ const redirects = slugs.filter(slug => !noindexColorSlugs.has(slug)).map(slug =>
   destination: `/color/${slug}`,
   permanent: true,
 }));
+const aliasRedirects = [...colorSlugAliases].flatMap(([alias, canonical]) => ['color', 'colors'].map(base => ({
+  source: `/${base}/${alias}`,
+  destination: `/color/${canonical}`,
+  permanent: true,
+})));
 
-vercelConfig.redirects = redirects;
+vercelConfig.redirects = [...aliasRedirects, ...redirects];
 writeFileSync(vercelPath, `${JSON.stringify(vercelConfig, null, 2)}\n`);
 
 const oldRouteSlugs = new Set(slugs);

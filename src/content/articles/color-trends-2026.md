@@ -1,7 +1,7 @@
 ---
 title: "Color Trends 2026: What's Shaping Design This Year"
 slug: color-trends-2026
-date: "2026-02-15"
+date: "2026-05-12"
 hexCode: "#8B5CF6"
 description: "From glassmorphism greens to quiet luxury neutrals — the color trends defining graphic design, web design, and interiors in 2026."
 featured: true

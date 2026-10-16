@@ -1,7 +1,7 @@
 ---
 title: "Color Psychology in Branding: How Colors Influence Customer Decisions"
 slug: color-psychology-in-branding
-date: "2026-03-15"
+date: "2026-05-12"
 hexCode: "#E74C3C"
 description: "Understanding how colors affect perception, emotion, and buying behavior — the science behind successful brand color choices."
 featured: false

@@ -1,7 +1,7 @@
 ---
 title: "Understanding the Color Code for Gold"
 slug: color-code-for-gold
-date: "2023-10-01"
+date: "2025-02-24"
 hexCode: "#FFD700"
 description: "Gold is a timeless color symbolizing wealth, luxury, and success. This article explores its color code, applications, and cultural significance."
 featured: true

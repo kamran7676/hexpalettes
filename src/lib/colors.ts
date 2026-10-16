@@ -2,6 +2,7 @@ import { readdir, readFile } from 'fs/promises';
 import matter from 'gray-matter';
 import path from 'path';
 import { marked } from 'marked';
+import { colorSlugAliases } from './color-routes.mjs';
 
 export interface Color {
   slug: string;
@@ -49,7 +50,17 @@ export async function getAllColors(): Promise<Color[]> {
       })
   );
 
-  return colors;
+  // One entry per canonical slug: drop aliases, keep the longest file for duplicate slugs
+  const colorsBySlug = new Map<string, Color>();
+  for (const color of colors) {
+    if (colorSlugAliases.has(color.slug)) continue;
+    const current = colorsBySlug.get(color.slug);
+    if (!current || color.content.length > current.content.length) {
+      colorsBySlug.set(color.slug, color);
+    }
+  }
+
+  return [...colorsBySlug.values()];
 }
 
 export async function getColorBySlug(slug: string): Promise<Color | null> {

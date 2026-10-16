@@ -1,9 +1,10 @@
 ---
 title: "What Color is Pluto?"
 slug: color-of-pluto
-date: "2023-10-01"
+date: "2025-02-24"
 hexCode: "#C2B280"
 description: "Pluto's color is a mix of muted browns and grays, with hints of reddish tones, reflecting its complex surface and unique atmospheric conditions."
+noindex: true
 featured: true
 ---
 

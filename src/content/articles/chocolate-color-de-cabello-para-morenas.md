@@ -1,9 +1,10 @@
 ---
 title: "Chocolate Color de Cabello para Morenas: La Elección Perfecta"
 slug: chocolate-color-cabello-morenas
-date: "2023-10-01"
+date: "2025-02-24"
 hexCode: "#7B4B3A"
 description: "Descubre cómo el color chocolate puede realzar la belleza de las morenas, ofreciendo calidez y sofisticación a cualquier estilo."
+noindex: true
 featured: true
 ---
 

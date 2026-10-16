@@ -1,7 +1,7 @@
 ---
 title: "Pantone Color of the Year 2024: Peach Fuzz"
 slug: pantone-2024
-date: "2024-01-01"
+date: "2025-02-24"
 hexCode: "#FFBE98"
 description: "A warm and cozy shade that combines pink and orange, symbolizing tenderness, community, and nurturing in our modern world."
 featured: true

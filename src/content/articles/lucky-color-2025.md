@@ -1,9 +1,10 @@
 ---
 title: "Lucky Color 2025: Celestial Blue"
 slug: lucky-color-2025
-date: "2024-10-01"
+date: "2025-02-24"
 hexCode: "#4A90E2"
 description: "Celestial Blue, the lucky color for 2025, symbolizes tranquility, trust, and harmony, offering a sense of peace and inspiration for the new year."
+noindex: true
 featured: true
 ---
 
